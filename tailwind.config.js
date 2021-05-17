@@ -1,6 +1,5 @@
 module.exports = {
   purge: [],
-  target: "relaxed",
   prefix: "",
   important: false,
   separator: ":",
@@ -15,7 +14,7 @@ module.exports = {
       transparent: "transparent",
       current: "currentColor",
 
-      black: "#000",
+      black: "#2f2f2f",
       white: "#fff",
       pink: {
         1: "#FFF9FB",
@@ -43,6 +42,18 @@ module.exports = {
         700: "#4a5568",
         800: "#2d3748",
         900: "#1a202c",
+      },
+      grey: {
+        50: "#f9f9f9",
+        100: "#f2f2f2",
+        200: "#dfdfdf",
+        300: "#cccccc",
+        400: "#a6a6a6",
+        500: "#808080",
+        600: "#737373",
+        700: "#606060",
+        800: "#4d4d4d",
+        900: "#3f3f3f",
       },
       red: {
         100: "#fff5f5",
