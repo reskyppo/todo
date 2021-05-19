@@ -2,19 +2,21 @@ import React from "react";
 import ICPlus from "../assets/ic-plus.svg";
 import ICCLock from "../assets/ic-clock.svg";
 
-const Card = ({title}) => {
+const Card = ({ title, addBtn }) => {
   return (
     <div className="w-1/5">
       <div className="bg-grey-100 rounded-md p-4">
         <div className="flex justify-between">
           <div className="font-bold text-xl">{title}</div>
-          <div className="flex">
-            <img
-              src={ICPlus}
-              alt="Icon Plus"
-              className="w-3/4 cursor-pointer"
-            />
-          </div>
+          {addBtn && (
+            <div className="flex">
+              <img
+                src={ICPlus}
+                alt="Icon Plus"
+                className="w-3/4 cursor-pointer"
+              />
+            </div>
+          )}
         </div>
         <div className="bg-white mt-4 p-4 rounded-md">
           <h2 className="text-md font-medium">judul</h2>
